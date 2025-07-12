@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<link href="./assets/css/layui.min.css" rel="stylesheet">
+<!-- Designed By teamRoixir -->
+<title>
+   teamRoixir 团队官网
+</title>
+<style>
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+   color: #333;
+   font-size: 10pt;
+   background-image: url(./assets/img/bg.png);repeat-x;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   flex: 1 0 auto;
+}
+
+.container-main {
+   position: relative;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-image: url(./assets/img/paperbg.png);repeat-x;
+   background-size: cover;
+   background-repeat: no-repeat;
+   flex: 1 0 auto;
+}
+
+.container-main:before, .container-main:after {
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 98%;
+   content: "";
+}
+
+.container-main:before {
+   top: 4px;
+   left: -5px;
+   background: #D4CDC0;
+   box-shadow: 0 0 8px rgba(224,218,206,0.2);
+   transform: rotate(-2.5deg);
+}
+
+.container-main:after {
+   top: 1px;
+   right: -3px;
+   background: #C8C8BE;
+   box-shadow: 0 0 3px rgba(224,218,206,0.2);
+   transform: rotate(1.4deg);
+}
+
+.container-main {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(224,218,206,0.2);
+}
+
+.container-card {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.container-card-box {
+   width: calc(50% - 10px);
+   margin-bottom: 20px;
+   container-card-box-sizing: border-box;
+   border: 1px solid #000;
+   display: flex;
+}
+
+.container-card-box img {
+   max-width: 32px;
+   object-fit: contain;
+   padding: 5px 10px;
+}
+
+.container-card-text {
+   padding: 5px;
+   container-card-box-sizing: border-box;
+}
+
+.container-card-text p {
+   margin: 0px;
+   line-height: 1.0;
+}
+
+@media (max-width: 500px) {
+   .container-card-box {
+      width: 100%;
+   }
+}
+
+.footer-text {
+   display: flex;
+   align-items: center;
+}
+
+/*a {
+   text-decoration: none;
+}*/
+h1 {
+   text-align: center;
+}
+
+.container-team-info {
+   margin-bottom: 20px;
+}
+
+.container-team-info p {
+   line-height: 1.6;
+}
+
+.divideline {
+   border-bottom: 2px solid #333;
+   padding-bottom: 0px;
+}
+
+.underline {
+   text-decoration:underline
+}
+</style>
+
+</head>
+
+<body>
+<div class="container-main">
+   <h1>
+      团队官网
+   </h1>
+   <div class="container-team-info">
+      <h2>
+         关于我们
+      </h2>
+      <div class="divideline"></div>
+      <p>teamRoixir 成立于 2021 年，是一个因成员共同兴趣爱好而成立的团队，主要项目与探索方向皆以兴趣为主，涉及文学、音乐、学术、网络等，但不仅限于此。本团队仅限邀请式加入，且目前无公开对外承接项目的计划。
+      </p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         主要业务
+      </h2>
+      <div class="divideline"></div>
+      <p><b>【其他业务已剥离，本工作室目前仅为项目测试使用】</b></p>
+      <p>网站搭建、模板改造、小型Logo设计；资料查询整理；在线小工具服务；……</p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         团队核心成员成员
+      </h2>
+      <div class="divideline"></div>
+      <p>
+         <div class="container-card">
+            <div class="container-card-box">
+               <img src="assets/img/avatar-originator.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>???</b></p><p>工作室创始人</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/avatar.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>Ryocz</b></p><p>团队成员</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/avatar.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>Narkmas Zero</b></p><p>团队成员</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/avatar.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>Nel Datex</b></p><p>团队成员</p>
+               </div>
+            </div>
+         </div>
+      </p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         管理项目
+      </h2>
+      <div class="divideline"></div>
+      <p>
+         <div class="container-card">
+            <div class="container-card-box">
+               <img src="https://www.jsdelivr.com/favicon.ico" alt="Image">
+               <div class="container-card-text">
+                  <p><b>jsDelivr 镜像站</b></p><p>所有文件结构均遵循 jsDelivr 原有结构<!--<input type="button" class="layui-btn-container" lay-on="iframe_jsdmirror" value="如何使用"></input>--></p></p>为响应 Cloudflare 更新后的协议，镜像站暂时关停<p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/project.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>Web 实验室</b></p>
+                  <p>与 DevPluie 联合运营</p>
+                  <p>【域名故障，等待恢复】</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/project.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>聊天室</b></p>
+                  <p>【测试未通过，搁置中】</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/project.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>公共 API</b></p>
+                  <p>【上线后未达到预期，现已停止服务】</p>
+               </div>
+            </div>
+            <div class="container-card-box">
+               <img src="assets/img/project.png" alt="Image">
+               <div class="container-card-text">
+                  <p><b>任意网站在线代理</b></p>
+                  <p>【开发中】</p>
+               </div>
+            </div>
+         </div>
+      </p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         重大事件
+      </h2>
+      <div class="divideline"></div>
+      <p>2021.9 - 团队成立</p>
+      <p>2023.12 - 收并 Zynnmotu Studio 进行融合，其持有域名在名义上由 teamRoixir 管理</p>
+      <p>2024.7 - 微调旗下域名的使用规则，部分域名在一定限度内开放分发使用。</p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         联系我们
+      </h2>
+      <div class="divideline"></div>
+      <p>
+         暂无
+      </p>
+   </div>
+   <div class="divideline"></div>
+   <div class="container-team-info">
+      <p>
+         友情链接：
+      </p>
+   </div>
+
+   <!--
+   <div class="container-team-info">
+      <h2>
+         联系我们
+      </h2>
+      <div class="divideline"></div>
+      <p>
+         这里展示团队正在进行或已完成的项目
+      </p>
+   </div>
+   -->
+
+   <!--<div class="container-card">
+      <div class="container-card-box">
+         <img src="【url】" alt="Image">
+         <div class="container-card-text">
+             Your text here. Your text here. Your text here. Your text here. Your text here.
+         </div>
+      </div>
+      <div class="container-card-box">
+         <img src="【url】" alt="Image">
+         <div class="container-card-text">
+             Your text here. Your text here. Your text here. Your text here. Your text here.
+         </div>
+      </div>
+   </div>-->
+   <div id="translate"></div>
+   <div class="container-footer">
+      <p class="footer-text">Copyright © 2021-<script type="text/javascript">document.write((new Date()).getFullYear());</script> Lanmien Roixir All rights reserved.</p>
+      <!-- Designed By teamRoixir -->
+   </div>
+
+</div>
+</body>
+ 
+      <script src="assets/js/translate.js"></script>
+      <script>
+        translate.setUseVersion2(); //设置使用v2.x 版本
+        translate.language.setLocal(''); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。
+        translate.execute();//进行翻译 
+      </script>
+</html>

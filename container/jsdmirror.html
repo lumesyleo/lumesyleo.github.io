@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<title>jsDelivr 镜像站</title>
+<meta name="keywords" content="jsdelivr, cdn, npm, github, js, javascript, free, 加速, 镜像, 国内, 自由使用">
+<meta name="description" content="基于 Cloudflare的任何人都可以自由使用的 jsDelivr 镜像">
+<link rel="icon" type="image/x-icon" class="r-meta-e" href="/favicon.ico">
+
+<style>
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+   color: #333;
+   font-size: 10pt;
+}
+.container-main {
+   position: relative;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-main:before, .container-main:after {
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 98%;
+   content: "";
+}
+.container-main:before {
+   top: 4px;
+   left: -5px;
+   background: #D4CDC0;
+   box-shadow: 0 0 8px rgba(224,218,206,0.2);
+   transform: rotate(-2.5deg);
+}
+.container-main:after {
+   top: 1px;
+   right: -3px;
+   background: #C8C8BE;
+   box-shadow: 0 0 3px rgba(224,218,206,0.2);
+   transform: rotate(1.4deg);
+}
+.container-main {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(224,218,206,0.2);
+}
+.container-card {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.container-card-box {
+   width: calc(50% - 10px);
+   margin-bottom: 20px;
+   container-card-box-sizing: border-box;
+   border: 1px solid #000;
+   display: flex;
+}
+.container-card-box img {
+   max-width: 32px;
+   object-fit: contain;
+   padding: 5px 10px;
+}
+.container-card-text {
+   padding: 5px;
+   container-card-box-sizing: border-box;
+}
+.container-card-text p {
+   margin: 0px;
+   line-height: 1.0;
+}
+@media (max-width: 300px) {
+   .container-card-box {
+      width: 100%;
+   }
+}
+.footer-text {
+   display: flex;
+   align-items: center;
+}
+a {
+   text-decoration: none;
+}
+h1 {
+   text-align: center;
+}
+.container-team-info {
+   margin-bottom: 20px;
+}
+.container-team-info p {
+   line-height: 1.6;
+}
+.divideline {
+   border-bottom: 2px solid #333;
+   padding-bottom: 0px;
+}
+.underline {
+   text-decoration:underline
+}
+</style>
+</head>
+<body>
+<div class="container-main">
+   <h1>
+      jsDelivr 镜像站
+   </h1>
+   <div class="container-team-info">
+      <h2>
+         这是什么
+      </h2>
+      <div class="divideline"></div>
+      <p>该站点为自建的 jsDelivr 镜像，使用 Cloudflare CDN 分发资源。因此，该镜像你可以任意使用，包括作为图床使用<b>【但不鼓励】</b>。</p>
+
+      <p>由 <a class="underline">锦音墨图</a> 搭建，目前由 teamRoixir 维护</p>
+      </p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         使用方法
+      </h2>
+      <div class="divideline"></div>
+      <p><b style="color:hotpink">提醒：原有地址 jsdelivr.jimtu.eu.org 停止服务，如继续使用此服务请自行更新地址</b></p>
+      <p>本镜像站所有文件结构均遵循 jsDelivr 原有结构，使用时直接将【<b style="color: hotpink;">https://cdn.jsdelivr.net</b>】字段更换为【<b style="color: hotpink;">https://v2-jsd.jimtu.eu.org</b>】即可。</p>
+      <p>该版本反代地址将会继续一段时间的测试，如效果不佳则会再度修改。</p>
+   </div>
+   <div class="container-team-info">
+      <h2>
+         使用条款
+      </h2>
+      <div class="divideline"></div>
+      <p>使用时，请遵守 jsDelivr 与 npm 的 ToS，不允许使用本镜像加速任何违规文件或作为公共图床。</p>
+      <p>建议在 jsDelivr 源站无法使用时作临时替代品使用；流量大的站点请慎重使用，因为每天只有 10W 次请求。</p>
+   </div>
+   <div class="divideline"></div>
+   <div class="container-footer">
+      <p class="footer-text">jsDelivr镜像站 2021-<script type="text/javascript">document.write((new Date()).getFullYear());</script>.</p>
+   </div>
+</div>
+</body>
+</html>

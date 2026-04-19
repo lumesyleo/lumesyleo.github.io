@@ -1,4 +1,5 @@
 *.bat
 *.sh
 *.txt
+!robots.txt
 no/

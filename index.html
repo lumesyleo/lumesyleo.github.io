@@ -1,315 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-<link href="./assets/css/layui.min.css" rel="stylesheet">
-<!-- Designed By LumesyleoLab -->
-<title>
-   LumesyleoLab 官网
-</title>
-<style>
-body {
-   font-family: Arial, sans-serif;
-   background-color: #f2f2f2;
-   color: #333;
-   font-size: 10pt;
-   background-image: url(./assets/img/bg.png);repeat-x;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   flex: 1 0 auto;
-}
-
-.container-main {
-   position: relative;
-   max-width: 600px;
-   margin: 0 auto;
-   padding: 20px;
-   background-color: #fff;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   background-image: url(./assets/img/paperbg.png);repeat-x;
-   background-size: cover;
-   background-repeat: no-repeat;
-   flex: 1 0 auto;
-}
-
-.container-main:before, .container-main:after {
-   position: absolute;
-   z-index: -1;
-   width: 100%;
-   height: 98%;
-   content: "";
-}
-
-.container-main:before {
-   top: 4px;
-   left: -5px;
-   background: #D4CDC0;
-   box-shadow: 0 0 8px rgba(224,218,206,0.2);
-   transform: rotate(-2.5deg);
-}
-
-.container-main:after {
-   top: 1px;
-   right: -3px;
-   background: #C8C8BE;
-   box-shadow: 0 0 3px rgba(224,218,206,0.2);
-   transform: rotate(1.4deg);
-}
-
-.container-main {
-   max-width: 600px;
-   margin: 0 auto;
-   padding: 20px;
-   background-color: #fff;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(224,218,206,0.2);
-}
-
-.container-card {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.container-card-box {
-   width: calc(50% - 10px);
-   margin-bottom: 20px;
-   container-card-box-sizing: border-box;
-   border: 1px solid #000;
-   display: flex;
-}
-
-.container-card-box img {
-   max-width: 32px;
-   object-fit: contain;
-   padding: 5px 10px;
-}
-
-.container-card-text {
-   padding: 5px;
-   container-card-box-sizing: border-box;
-}
-
-.container-card-text p {
-   margin: 0px;
-   line-height: 1.0;
-}
-
-@media (max-width: 500px) {
-   .container-card-box {
-      width: 100%;
-   }
-}
-
-.footer-text {
-   display: flex;
-   align-items: center;
-}
-
-/*a {
-   text-decoration: none;
-}*/
-h1 {
-   text-align: center;
-}
-
-.container-team-info {
-   margin-bottom: 20px;
-}
-
-.container-team-info p {
-   line-height: 1.6;
-}
-
-.divideline {
-   border-bottom: 2px solid #333;
-   padding-bottom: 0px;
-}
-
-.underline {
-   text-decoration:underline
-}
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <title>Lumesyleo Lab | 捕捉乍现的灵感与创意</title>
+  <link href="./assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
-<div class="container-main">
-   <h1>
-      Lumesyleo Lab
-   </h1>
-   <div class="container-team-info">
-      <h2>
-         关于我们
-      </h2>
-      <div class="divideline"></div>
-      <p>团队成立于 2021 年，是一个因成员共同兴趣爱好而成立的团队，主要项目与探索方向皆以兴趣为主，涉及文学、音乐、学术、网络等，但不仅限于此。自 2023 年开始，我们将 AI 作为重要技术辅助工具，快速验证每一个创意。从需求到产品再到用户，我们一直追求创新。
-      </p>
-   </div>
-   <div class="container-team-info">
-      <h2>
-         主要业务
-      </h2>
-      <div class="divideline"></div>
-      <p><b>【其他业务已剥离，本工作室目前仅为项目测试使用】</b></p>
-      <p>网站搭建、模板改造、小型Logo设计；资料查询整理；在线小工具服务；……</p>
-   </div>
-   <div class="container-team-info">
-      <h2>
-         团队核心成员成员
-      </h2>
-      <div class="divideline"></div>
-      <p>
-         <div class="container-card">
-            <div class="container-card-box">
-               <img src="assets/img/avatar-originator.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>???</b></p><p>工作室创始人</p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/avatar.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>Ryocz</b></p><p>团队成员</p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/avatar.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>Narkmas Czeroa</b></p><p>团队成员</p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/avatar.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>Nel Datex</b></p><p>团队成员</p>
-               </div>
-            </div>
-         </div>
-      </p>
-   </div>
-   <div class="container-team-info">
-      <h2>
-         管理项目
-      </h2>
-      <div class="divideline"></div>
-      <p>
-         <div class="container-card">
-            <div class="container-card-box">
-               <img src="https://www.jsdelivr.com/favicon.ico" alt="Image">
-               <div class="container-card-text">
-                  <p><b>jsDelivr 镜像站</b></p><p>所有文件结构均遵循 jsDelivr 原有结构<!--<input type="button" class="layui-btn-container" lay-on="iframe_jsdmirror" value="如何使用"></input>--></p></p>为响应 Cloudflare 更新后的协议，镜像站暂时关停<p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/project.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>Web 实验室</b></p>
-                  <p>123</p>
-                  <p><a href="https://tool.lolic.dpdns.org/" target="_blank"><button>Web 实验室</button></a></p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/project.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>聊天室</b></p>
-                  <p>【测试未通过，搁置中】</p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/project.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>公共 API</b></p>
-                  <p>【上线后未达到预期，现已停止服务】</p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/project-web-clipboard.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>网络剪切板</b></p>
-                  <p>无需登录、无需安装，打开即用的临时文本共享工具</p>
-                  <p><a href="https://tool.lolic.dpdns.org/clipboard/index.php" target="_blank"><button>网络剪切板</button></a></p>
-               </div>
-            </div>
-            <div class="container-card-box">
-               <img src="assets/img/project.png" alt="Image">
-               <div class="container-card-text">
-                  <p><b>Coming soon</b></p>
-                  <p>......</p>
-                  <p>......</p>
-               </div>
-            </div>
-         </div>
-      </p>
-   </div>
-   <div class="container-team-info">
-      <h2>
-         重大事件
-      </h2>
-      <div class="divideline"></div>
-      <p>2021.09 - 团队成立</p>
-      <p>2023.10 - 借助 AI 赋能开发</p>
-      <p>2024.07 - 微调旗下域名的使用规则，部分域名在一定限度内开放分发使用。</p>
-      <p>2026.03 - 团队更名</p>
-   </div>
-   <div class="container-team-info">
-      <h2>
-         联系我们
-      </h2>
-      <div class="divideline"></div>
-      <p>
-         暂无
-      </p>
-   </div>
-   <div class="divideline"></div>
-   <div class="container-team-info">
-      <p>
-         友情链接：
-      </p>
-   </div>
 
-   <!--
-   <div class="container-team-info">
-      <h2>
-         联系我们
-      </h2>
-      <div class="divideline"></div>
-      <p>
-         这里展示团队正在进行或已完成的项目
-      </p>
-   </div>
-   -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo-box"><img src="./assets/img/logo2.png"></div>
+      <a href="#home" class="nav-title">Lumesyleo</a>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle" class="icon-btn" aria-label="切换深色模式">◐</button>
+      <button id="menu-toggle" class="icon-btn" aria-label="菜单">☰</button>
+      <nav class="nav-links">
+        <a href="#home" class="active">首页</a>
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home">首页</a>
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+    </div>
+  </header>
 
-   <!--<div class="container-card">
-      <div class="container-card-box">
-         <img src="【url】" alt="Image">
-         <div class="container-card-text">
-             Your text here. Your text here. Your text here. Your text here. Your text here.
-         </div>
+  <main>
+    <!-- 首页 -->
+    <section id="home" class="page-section">
+      <div class="page-inner hero-wrapper">
+        <div class="hero-line"></div>
+        <h1 class="hero-title" id="hero-title">Lumesyleo</h1>
+        <p class="hero-sub glitch-target">DESIGNING THE FUTURE</p>
+        <span class="deco" style="user-select: none; top:15%; left:8%; transform:rotate(90deg)">⌘</span>
+        <span class="deco" style="user-select: none; bottom:20%; right:12%">⌥</span>
+        <span class="deco" style="user-select: none; top:35%; right:5%; transform:skewX(45deg)">∞</span>
+        <div class="deco-line" style="user-select: none; top:70%; left:10%; width:80px; height:1px; transform:rotate(-30deg)"></div>
+        <div class="deco-line" style="user-select: none; bottom:30%; left:5%; width:120px; height:1px; transform:rotate(15deg)"></div>
+        <div class="hero-coord tl" style="user-select: none;">X:325 Y:799 // ORIGIN</div>
+        <div class="hero-coord br" style="user-select: none;">Δ: SYS_ACTIVE</div>
+        <div class="hero-fragment f1"></div>
+        <div class="hero-fragment f2"></div>
+        <div class="hero-fragment f3"></div>
       </div>
-      <div class="container-card-box">
-         <img src="【url】" alt="Image">
-         <div class="container-card-text">
-             Your text here. Your text here. Your text here. Your text here. Your text here.
-         </div>
-      </div>
-   </div>-->
-   <div id="translate"></div>
-   <div class="container-footer">
-      <p class="footer-text">Copyright © 2021-<script type="text/javascript">document.write((new Date()).getFullYear());</script> LumesyleoLab All rights reserved.</p>
-      <!-- Designed By LumesyleoLab -->
-   </div>
+    </section>
 
-</div>
+    <!-- 关于 -->
+    <section id="about" class="page-section">
+      <div class="page-inner">
+        <h2 class="section-title">关于我们 / ABOUT</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>关注前沿技术与架构，快速验证每一个创意。我们认真对待每一个创意，快速完成各类创意的落地验证工作。优质的设计作品，往往源自简约克制的表达逻辑。每一套强大成熟的技术系统，最初都源于鲜活珍贵的创意灵感，灵感是技术创新的起点。</p>
+            <p>ChatGPT 问世并普及之后，人工智能行业进入高速发展的新阶段；各类 AI 技术不断迭代成熟，大幅降低了项目落地的整体难度。技术落地的门槛持续降低，让独特的灵感与新颖的创意显得更为珍贵且重要。我们借助成熟的人工智能工具，将碎片化的灵感与创意转化为可见的成果，用技术赋能创意。</p>
+            <p></p>
+          </div>
+          <div class="about-mockup">
+            <div class="mockup-box">[ DEVICE MOCKUP LOADING... ]</div>
+            <div class="mockup-grid">[ DEVICE MOCKUP LOADING... ]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="page-section">
+      <!-- 桌面端 -->
+      <div class="projects-desktop">
+        <!-- 左上角标题 -->
+        <h2 class="section-title">项目一览 / PROJECTS</h2>
+        <!-- 右上角斜框标题） -->
+        <div class="project-hero-title" id="project-hero-title">Project Name</div>
+        
+        <!-- 内容舞台 -->
+        <div class="project-viewport" id="project-viewport"></div>
+        
+        <!-- 左下角 3D 时间轴 -->
+        <div class="project-timeline-outer">
+          <div class="project-timeline" id="project-timeline"></div>
+        </div>
+      </div>
+      
+      <!-- 移动端 -->
+      <div class="page-inner projects-mobile">
+        <h2 class="section-title">项目一览 / PROJECTS</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="logo-box-footer"><img src="./assets/img/logo2.png"></div>
+        <span></span>
+      </div>
+      <p class="footer-desc">
+        用简洁优雅的方式解决复杂问题，在数字世界中锻造坚实可靠的产品。<br>
+        少即是多，平衡用户体验与开发舒适度。
+      </p>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-left">Copyright © 2025-<script type="text/javascript">document.write((new Date()).getFullYear());</script> Lumesyleo Lab. ALL RIGHTS RESERVED.</div>
+      <div class="footer-right"></div>
+    </div>
+  </footer>
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
- 
-      <script src="assets/js/translate.js"></script>
-      <script>
-        translate.setUseVersion2(); //设置使用v2.x 版本
-        translate.language.setLocal(''); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。
-        translate.execute();//进行翻译 
-      </script>
 </html>

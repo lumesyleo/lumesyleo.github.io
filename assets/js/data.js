@@ -26,7 +26,7 @@ const projects = [
     color: 'self_developed',
     scheme: 1,
     image: './assets/img/project-musicplayer.png',
-    desc: '灵感来源于 MetingJS，支持 Meting API 格式数据解析但不依赖 Aplayer 和 MetingJS。目前已实现基本功能，仍处于开发阶段。<br>（注：前面那个 lite-music-manager 提供的 API 它也能用）',
+    desc: '灵感来源于 MetingJS，支持 Meting API 格式数据解析但不依赖 Aplayer 和 MetingJS。目前已实现基本功能，仍处于开发阶段。',
     link: 'https://music.lolic.dpdns.org/',
     linkText: 'VIEW_EXPERIENCE →'
   },
